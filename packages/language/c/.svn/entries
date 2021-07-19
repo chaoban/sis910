@@ -1,0 +1,34 @@
+8
+
+dir
+560
+http://172.18.204.110/svn/sis910/trunk/sis910/ecos-2.0/packages/language/c
+http://172.18.204.110/svn/sis910
+
+
+
+2008-09-11T10:25:22.421875Z
+356
+sis4172
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6c704c55-9005-d446-bb83-9136561f5d83
+
+libm
+dir
+
+libc
+dir
+

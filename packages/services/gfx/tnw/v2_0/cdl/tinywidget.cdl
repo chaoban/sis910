@@ -1,0 +1,54 @@
+# ====================================================================
+#
+#      tinyWidget.cdl
+#
+#      MicroWindows configuration data
+#
+# ====================================================================
+
+cdl_package CYGPKG_TINYWIDGET {
+    display       "tinyWidget"
+    requires      CYGPKG_MICROWINDOWS
+    description   "tinyWidget."
+
+    # tinyWidget source
+    compile                     \
+        interface.c             \
+        tnButton.c				\
+        tnWidgets.c				\
+        tnResource.c			\
+        tnTrim.c				\
+        tnCheckButton.c			\
+        tnLabel.c              \
+        tnListBox.c				\
+        tnPicture.c				\
+        tnProgressBar.c			\
+        tnRadioButton.c			\
+        tnRadioButtonGroup.c	\
+        tnScrollBar.c			\
+        tnTextBox.c				\
+        tnButtonGroup.c         \
+        tnWindow.c
+     
+    
+    cdl_option CYGPKG_TINYWIDGET_CFLAGS_ADD {
+            display "Additional compiler flags"
+            flavor  data
+            no_define
+            default_value { "-I$(PREFIX)/include/microwin -I$(PREFIX)/include/tinywidget  -D__ECOS=1 -DMSDOS=0 -DELKS=0 -D__rtems__=0 -D_MINIX=0 -DNOTYET=0 -DUNIX=1 -DHAVE_FILEIO -DHAVE_BMP_SUPPORT=1 -DHAVE_PNM_SUPPORT=1 -DHAVE_XPM_SUPPORT=1 -DxHAVE_JPEG_SUPPORT=1 -DHAVESELECT=1" }
+            description   "
+                This option modifies the set of compiler flags for
+                building the tinyWidget package.
+                These flags are used in addition to the set of global flags."
+    }
+        
+    #make {
+    #<PREFIX>/lib/libtnW.a : $(OBJS)
+	#@ echo "building $(TWLIB)..."
+	#$ (AR) -rs $(PREFIX)/lib/libtnW.a $(OBJS)
+    #
+    #}   
+    #
+    #$ (AR) -rs $(PREFIX)/lib/libtnW.a $(OBJS)
+
+}

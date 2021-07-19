@@ -1,0 +1,79 @@
+8
+
+dir
+560
+http://172.18.204.110/svn/sis910/trunk/sis910/ecos-2.0/packages/hal/h8300/aki3068net/v2_0/include
+http://172.18.204.110/svn/sis910
+
+
+
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6c704c55-9005-d446-bb83-9136561f5d83
+
+plf_intr.h
+file
+
+
+
+
+2009-03-25T14:16:44.971525Z
+24c6b46afb6f60fff6186d3e68acbcbf
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+
+plf_stub.h
+file
+
+
+
+
+2009-03-25T14:16:44.987151Z
+2f868bcad24d563a3964e865274523b3
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+
+pkgconf
+dir
+
+platform.inc
+file
+
+
+
+
+2009-03-25T14:16:45.002776Z
+5814877e7b1ed77fb71ada588bbe4e99
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+
+hal_diag.h
+file
+
+
+
+
+2009-03-25T14:16:45.018401Z
+c887783758e762814ebb0f0c80d0ed51
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+

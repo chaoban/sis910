@@ -1,0 +1,64 @@
+8
+
+dir
+560
+http://172.18.204.110/svn/sis910/trunk/sis910/ecos-2.0/packages/templates
+http://172.18.204.110/svn/sis910
+
+
+
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6c704c55-9005-d446-bb83-9136561f5d83
+
+kernel
+dir
+
+stubs
+dir
+
+uitron
+dir
+
+posix
+dir
+
+default
+dir
+
+old_net
+dir
+
+minimal
+dir
+
+net
+dir
+
+all
+dir
+
+cygmon_no_kernel
+dir
+
+cygmon
+dir
+
+redboot
+dir
+

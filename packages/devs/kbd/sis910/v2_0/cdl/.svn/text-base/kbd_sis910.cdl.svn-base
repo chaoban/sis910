@@ -1,0 +1,65 @@
+#==========================================================================
+# 
+#       kbd_sis910.cdl
+# 
+#       eCos configuration data for the sis910 keypad/buttons
+# 
+#==========================================================================
+######DESCRIPTIONBEGIN####
+# 
+# Author(s):    Iris Lin
+# Contributors:
+# Date:         2008-07-24
+# Purpose:      
+# Description:  Kbdscreen drivers for sis910
+# 
+#####DESCRIPTIONEND####
+# 
+#==========================================================================
+
+cdl_package CYGPKG_DEVS_KBD_SIS910 {
+    display     "Keypad driver for sis910"
+    include_dir cyg/io
+
+    active_if   CYGPKG_IO_FILEIO
+    requires    CYGPKG_IO
+    requires    CYGFUN_KERNEL_API_C
+
+    compile       -library=libextras.a sis910_kbd.c
+
+    description "Keypad driver for sis910"
+
+    cdl_component CYGPKG_DEVS_KBD_SIS910_OPTIONS {
+        display "options"
+        flavor  none
+        no_define
+
+        cdl_option CYGPKG_DEVS_KBD_SIS910_CFLAGS {
+            display       "Additional compiler flags"
+            flavor        data
+            no_define
+            default_value { "" }
+            description "
+               This option modifies the set of compiler flags for
+               building the keypad driver package. These flags
+               are used in addition to the set of global flags."
+        }
+
+        cdl_option CYGDAT_DEVS_KBD_SIS910_NAME {
+            display "Device name for the keypad driver"
+            flavor data
+            default_value {"\"/dev/kbd\""}
+            description " This option specifies the name of the keypad device"
+        }
+
+        cdl_option CYGNUM_DEVS_KBD_SIS910_EVENT_BUFFER_SIZE {
+            display "Number of events the driver can buffer"
+            flavor data
+            default_value { 32 }
+            description "
+                This option defines the size of the keypad device internal
+            buffer. The cyg_io_read() function will return as many of these
+            as there is space for in the buffer passed."
+        }
+    }
+}

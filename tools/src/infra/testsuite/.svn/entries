@@ -1,0 +1,61 @@
+8
+
+dir
+560
+http://172.18.204.110/svn/sis910/trunk/sis910/ecos-2.0/tools/src/infra/testsuite
+http://172.18.204.110/svn/sis910
+
+
+
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6c704c55-9005-d446-bb83-9136561f5d83
+
+cyginfra
+dir
+
+Makefile.in
+file
+
+
+
+
+2009-03-25T14:10:19.937811Z
+171287ac69839ff163ae04b95709ed65
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+
+config
+dir
+
+lib
+dir
+
+Makefile.am
+file
+
+
+
+
+2009-03-25T14:10:19.953436Z
+f33f4de70f83c205bd6c4d0dd9770572
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+

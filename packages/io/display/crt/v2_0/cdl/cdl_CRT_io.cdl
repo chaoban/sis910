@@ -1,0 +1,29 @@
+# ====================================================================
+#
+#      CRT_io.cdl
+#
+#      eCos sis CRT IO module configuration data
+#
+# ====================================================================
+
+# ====================================================================
+######DESCRIPTIONBEGIN####
+#
+# Author(s):      Jiunhau Wang
+# Contributors:
+# Date:           2008-05-20
+#
+#####DESCRIPTIONEND####
+# ====================================================================
+
+cdl_package CYGPKG_IO_CRT {
+	display "SiS 910 CRT IO Interface"
+	description "The CRT IO Interface of sis910 project"		
+	include_dir  "cyg/io/display/crt"
+	
+	cdl_interface CYGHWR_IO_CRT {
+	display     "Availability of CRT hardware"
+    }
+
+	compile	-library=libextras.a Crt_io.c 	
+}

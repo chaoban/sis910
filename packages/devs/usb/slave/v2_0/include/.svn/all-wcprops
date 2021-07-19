@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/sis910/!svn/ver/571/trunk/sis910/ecos-2.0/packages/devs/usb/slave/v2_0/include
+END
+slave.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/sis910/!svn/ver/571/trunk/sis910/ecos-2.0/packages/devs/usb/slave/v2_0/include/slave.h
+END
+slave_udc.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/sis910/!svn/ver/571/trunk/sis910/ecos-2.0/packages/devs/usb/slave/v2_0/include/slave_udc.h
+END

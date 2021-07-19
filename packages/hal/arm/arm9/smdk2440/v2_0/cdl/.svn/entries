@@ -1,0 +1,40 @@
+8
+
+dir
+560
+http://172.18.204.110/svn/sis910/trunk/sis910/ecos-2.0/packages/hal/arm/arm9/smdk2440/v2_0/cdl
+http://172.18.204.110/svn/sis910
+
+
+
+2008-04-17T23:13:45.390625Z
+33
+sis2882
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6c704c55-9005-d446-bb83-9136561f5d83
+
+hal_arm_arm9_smdk2440.cdl
+file
+
+
+
+
+2009-03-25T14:15:34.783576Z
+39fa31484e156140cc46ea0af3c4efbc
+2008-04-17T23:13:45.390625Z
+33
+sis2882
+

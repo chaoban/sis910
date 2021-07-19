@@ -1,0 +1,30 @@
+# ====================================================================
+#
+#      G2D_io.cdl
+#
+#      eCos sis G2D IO module configuration data
+#
+# ====================================================================
+
+# ====================================================================
+######DESCRIPTIONBEGIN####
+#
+# Author(s):      Jiunhau Wang
+# Contributors:
+# Date:           2008-05-20
+#
+#####DESCRIPTIONEND####
+# ====================================================================
+
+cdl_package CYGPKG_IO_G2D {
+	display "SiS 910 G2D IO Interface"
+	description "The G2D IO Interface of sis910 project"		
+	include_dir  "cyg/io/display/g2d"
+	
+	cdl_interface CYGHWR_IO_G2D {
+	display     "Availability of G2D hardware"
+    }
+
+	compile -library=libextras.a G2D_io.c 	
+}
+

@@ -1,0 +1,35 @@
+# ====================================================================
+#
+#      aud_wma.cdl
+#
+#      SIS WMA Decoder device driver package.
+#
+# ====================================================================
+#####ECOSGPLCOPYRIGHTBEGIN####
+## -------------------------------------------
+##
+## -------------------------------------------
+#####ECOSGPLCOPYRIGHTEND####
+# ====================================================================
+######DESCRIPTIONBEGIN####
+#
+# Author(s):      tcx
+# Contributors:
+# Date:           2008-02-25
+#
+#####DESCRIPTIONEND####
+# ====================================================================
+
+cdl_package SISPKG_DEVS_AUD_WMA {
+    display     "WMA Decoder device driver"
+    compile     -library=libextras.a asf.c wma.c wmabts.c wmadec.c \
+                wmaentropy.c wmafft.c wmatable.c
+
+    cdl_option SISPKG_IO_AUD_DEC_WMA_DEBUG {
+        display          "Debug on/off"
+        flavor           bool
+        default_value    1
+        description      "
+           Open or close debug infomation."        
+    }
+}

@@ -1,0 +1,52 @@
+8
+
+dir
+572
+http://172.18.204.110/svn/sis910/trunk/sis910/ecos-2.0/packages/devs/eth/via/rhine/v2_0/src
+http://172.18.204.110/svn/sis910
+
+
+
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6c704c55-9005-d446-bb83-9136561f5d83
+
+if_rhine.c
+file
+
+
+
+
+2009-03-25T14:14:03.970495Z
+74cf0a45853b99814c8ec6248802a42f
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+
+via_rhine.h
+file
+
+
+
+
+2009-03-25T14:14:03.986120Z
+6495d57a866e7f12d2e85938ef971c42
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+

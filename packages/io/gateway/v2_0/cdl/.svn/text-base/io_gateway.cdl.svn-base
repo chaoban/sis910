@@ -1,0 +1,30 @@
+# ====================================================================
+#
+#      io_GATEWAY.cdl
+#
+#      eCos sis GATEWAY IO module configuration data
+#
+# ====================================================================
+
+# ====================================================================
+######DESCRIPTIONBEGIN####
+#
+# Author(s):      Tracy.
+# Contributors:
+# Date:           2008-05-23.
+#
+#####DESCRIPTIONEND####
+# ====================================================================
+
+cdl_package CYGPKG_IO_GATEWAY {
+	display "SIS910 GATEWAY IO Interface"
+
+	description " "		
+
+	include_dir  "cyg/io/gateway"
+	cdl_interface CYGHWR_IO_GATEWAY {
+	display     "Availability of GATEWAY hardware"
+    }
+
+	compile -library=libextras.a gatewayio.c 	
+}

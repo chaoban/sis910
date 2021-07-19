@@ -1,0 +1,52 @@
+8
+
+dir
+572
+http://172.18.204.110/svn/sis910/trunk/sis910/ecos-2.0/packages/devs/ir/sis910/v2_0/include
+http://172.18.204.110/svn/sis910
+
+
+
+2009-01-12T01:51:29.968750Z
+487
+sis4315
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6c704c55-9005-d446-bb83-9136561f5d83
+
+ir.h
+file
+
+
+
+
+2009-03-25T14:15:19.658479Z
+d5dafc38ecf12c4c913e6a2a2f6d764f
+2009-01-12T01:51:29.968750Z
+487
+sis4315
+
+keydef.h
+file
+
+
+
+
+2009-03-25T14:15:19.674105Z
+c58897e2b62b137eb678fbea76c22f2d
+2008-12-18T02:43:35.359375Z
+448
+sis4315
+

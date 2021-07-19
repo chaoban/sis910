@@ -1,0 +1,52 @@
+8
+
+dir
+560
+http://172.18.204.110/svn/sis910/trunk/sis910/ecos-2.0/packages/templates/uitron
+http://172.18.204.110/svn/sis910
+
+
+
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6c704c55-9005-d446-bb83-9136561f5d83
+
+v2_0.ect
+file
+
+
+
+
+2009-03-25T14:13:38.126580Z
+b2143afceebaa96e402a397fd62e36e2
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+
+ChangeLog
+file
+
+
+
+
+2009-03-25T14:13:38.142205Z
+6d2240e0f9b8f7a4517d90d03f62af3f
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+

@@ -1,0 +1,53 @@
+# ====================================================================
+#
+#      aud_ogg.cdl
+#
+#      eCos AT91SAM7 CAN module configuration data
+#
+# ====================================================================
+
+# ====================================================================
+######DESCRIPTIONBEGIN####
+#
+# Author(s):      Zhang xiaoheng
+# Contributors:
+# Date:           2008-03-20
+#
+#####DESCRIPTIONEND####
+# ====================================================================
+
+cdl_package CYGPKG_DEVS_AUD_OGG {
+	display "OGG Audio Decoder Device Driver"
+
+	description "
+		The OGG decoder is part of Audio Decoder Device Driver."
+	
+ compile oggdec.c analysis.c\
+ bitrate.c\
+ bitwise.c\
+ block.c\
+ codebook.c\
+ envelope.c\
+ floor0.c\
+ floor1.c\
+ framing.c\
+ info.c\
+ lookup.c\
+ lpc.c\
+ lsp.c\
+ mapping0.c\
+ mdct.c\
+ psy.c\
+ registry.c\
+ res0.c\
+ sharedbook.c\
+ smallft.c\
+ synthesis.c\
+ tone.c\
+ vorbisfile.c\
+ window.c
+
+	
+	
+}
+

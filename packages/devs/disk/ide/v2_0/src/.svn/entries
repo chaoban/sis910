@@ -1,0 +1,52 @@
+8
+
+dir
+572
+http://172.18.204.110/svn/sis910/trunk/sis910/ecos-2.0/packages/devs/disk/ide/v2_0/src
+http://172.18.204.110/svn/sis910
+
+
+
+2008-08-20T05:51:32.218750Z
+346
+sis4559
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6c704c55-9005-d446-bb83-9136561f5d83
+
+ide_disk.h
+file
+
+
+
+
+2009-03-25T14:14:35.908199Z
+8aefd48678eac359a8df47e09f271695
+2008-08-20T05:51:32.218750Z
+346
+sis4559
+
+ide_disk.c
+file
+
+
+
+
+2009-03-25T14:14:35.923825Z
+1f3f90ddaabbd3241d266da9f2a4364e
+2008-08-20T05:51:32.218750Z
+346
+sis4559
+

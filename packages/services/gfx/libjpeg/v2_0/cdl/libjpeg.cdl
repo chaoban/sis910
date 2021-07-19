@@ -1,0 +1,71 @@
+# ====================================================================
+#
+#      libjpeg.cdl
+#      Author(s):      ShengWei
+#      Original data:  jpeg-6b
+#      Date:           2008.04.14
+#        
+# ====================================================================
+
+cdl_package CYGPKG_JPEG {
+	display		"SiS 910 JPEG decoder driver"
+	description	"SiS 910 JPEG decoder driver."
+    include_dir jpeg
+    define_header jhwconfig.h
+
+    compile           \
+            jcomapi.c \
+	        jdapimin.c \
+	        jdapistd.c \
+	        jdatasrc.c \
+	        jdcoefct.c \
+	        jdcolor.c \
+	        jddctmgr.c \
+	        jdhuff.c \
+	        jdinput.c \
+	        jdmainct.c \
+	        jdmarker.c \
+	        jdmaster.c \
+	        jdmerge.c \
+	        jdphuff.c \
+	        jdpostct.c \
+	        jdsample.c \
+	        jerror.c \
+	        jidctflt.c \
+	        jidctfst.c \
+	        jidctint.c \
+	        jidctred.c \
+	        jmemmgr.c \
+	        jmemnobs.c \
+	        jquant1.c \
+	        jquant2.c \
+	        jdsishwjpeg.c\
+	        jutils.c
+	        
+
+	cdl_option CYGPKG_JPEG_PRE_SCALING {
+		active_if     {CYG_HAL_CHIP_VERSION == "910B"}
+		display       "Enable jpeg pre-scaling. "
+		flavor        bool
+		default_value 0
+		description   "
+			This option controls the JPEG prescaling function in version 910B."
+	}
+		
+    cdl_component CYGPKG_JPEG_TEMP_BUFFER_HEIGHT_LIMIT {
+        display       "Enable the limitation of height of temp buffer in JPEG"
+        flavor        bool
+        default_value 0
+        description   "
+            This option enables the temp buffer height limit."
+
+        cdl_option CYGPKG_JPEG_TEMP_BUFFER_HEIGHT {
+        display       "The value of the height."
+        flavor        data
+        legal_values  {"128" "256" "512"}
+        default_value {"128"}
+        description   "
+            This option sets temp buffer height."
+        }
+    }
+}

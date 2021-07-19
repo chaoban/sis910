@@ -1,0 +1,55 @@
+8
+
+dir
+560
+http://172.18.204.110/svn/sis910/trunk/sis910/ecos-2.0/packages/net/snmp/agent/v2_0/include/mibgroup
+http://172.18.204.110/svn/sis910
+
+
+
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6c704c55-9005-d446-bb83-9136561f5d83
+
+util_funcs.h
+file
+
+
+
+
+2009-03-25T14:13:32.079666Z
+71d186b62d9f8e8dbcaa7292aa5575fa
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+
+mibII
+dir
+
+struct.h
+file
+
+
+
+
+2009-03-25T14:13:32.095291Z
+df6838e23d8853fa0bc165a5c83ac6b7
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+

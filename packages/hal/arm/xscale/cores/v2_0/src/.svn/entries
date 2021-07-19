@@ -1,0 +1,52 @@
+8
+
+dir
+560
+http://172.18.204.110/svn/sis910/trunk/sis910/ecos-2.0/packages/hal/arm/xscale/cores/v2_0/src
+http://172.18.204.110/svn/sis910
+
+
+
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6c704c55-9005-d446-bb83-9136561f5d83
+
+xscale_misc.c
+file
+
+
+
+
+2009-03-25T14:15:30.236672Z
+1a83509aee84dcd6543bbae66cf87b24
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+
+xscale_stub.c
+file
+
+
+
+
+2009-03-25T14:15:30.252297Z
+560d6fd9cc6ca5cdf82976121b7b16cd
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+

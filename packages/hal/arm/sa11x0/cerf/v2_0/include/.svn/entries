@@ -1,0 +1,79 @@
+8
+
+dir
+560
+http://172.18.204.110/svn/sis910/trunk/sis910/ecos-2.0/packages/hal/arm/sa11x0/cerf/v2_0/include
+http://172.18.204.110/svn/sis910
+
+
+
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6c704c55-9005-d446-bb83-9136561f5d83
+
+plf_mmap.h
+file
+
+
+
+
+2009-03-25T14:15:46.814903Z
+39feaf2e0677370e7b3a02ecbd96d189
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+
+cerf.h
+file
+
+
+
+
+2009-03-25T14:15:46.814903Z
+61b6d562d4b1a9d020c6b01d2380a132
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+
+pkgconf
+dir
+
+hal_platform_setup.h
+file
+
+
+
+
+2009-03-25T14:15:46.830528Z
+7c4eddb762be78a0bfff549d95b33076
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+
+plf_io.h
+file
+
+
+
+
+2009-03-25T14:15:46.846153Z
+5e2871dc3c61bc8991fe54096aad5f18
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+

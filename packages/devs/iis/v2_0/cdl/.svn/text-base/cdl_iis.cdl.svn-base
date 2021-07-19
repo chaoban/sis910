@@ -1,0 +1,31 @@
+# ====================================================================
+#
+#      Iis.cdl
+#
+#      eCos Sisiis module configuration data
+#
+# ====================================================================
+
+# ====================================================================
+######DESCRIPTIONBEGIN####
+#
+# Author(s):      wang wei
+# Contributors:
+# Date:           2008-05-07
+#
+#####DESCRIPTIONEND####
+# ====================================================================
+
+cdl_package CYGPKG_DEVS_IIS {
+	display "SIS910 IIS Driver"
+	include_dir "cyg/devs/iis"
+	parent      CYGPKG_IO_IIS
+	active_if   CYGPKG_IO_IIS
+	description "The IIS driver Module of sis910 project"
+	implements  CYGHWR_IIS_DEVICE
+	
+	
+	compile -library=libextras.a iis.c
+	
+}
+

@@ -1,0 +1,52 @@
+8
+
+dir
+560
+http://172.18.204.110/svn/sis910/trunk/sis910/ecos-2.0/packages/hal/arm/xscale/verde/v2_0/src
+http://172.18.204.110/svn/sis910
+
+
+
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6c704c55-9005-d446-bb83-9136561f5d83
+
+verde_misc.c
+file
+
+
+
+
+2009-03-25T14:15:27.596030Z
+2985dd4e22c23da7c988ff43ef88416c
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+
+verde_pci.c
+file
+
+
+
+
+2009-03-25T14:15:27.611655Z
+7232c10ece100dfd12e01c8809842b01
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+

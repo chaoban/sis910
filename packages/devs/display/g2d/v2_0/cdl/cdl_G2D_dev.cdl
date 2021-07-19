@@ -1,0 +1,28 @@
+# ====================================================================
+#
+#      G2D_dev.cdl
+#
+#      eCos sis G2D module configuration data
+#
+# ====================================================================
+
+# ====================================================================
+######DESCRIPTIONBEGIN####
+#
+# Author(s):      Jiunhau wang
+# Contributors:
+# Date:           2008-05-20
+#
+#####DESCRIPTIONEND####
+# ====================================================================
+
+cdl_package CYGPKG_DEVS_G2D {
+	parent      CYGPKG_IO_G2D
+	display 	"SiS 910 G2D Device Driver"
+	include_dir "cyg/devs/display/g2d"
+	description "The G2D driver Module of sis910 project"
+	implements  CYGHWR_IO_G2D
+	
+	
+	compile -library=libextras.a G2D_dev.c  
+}

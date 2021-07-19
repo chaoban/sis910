@@ -1,0 +1,29 @@
+2008-04-17  Pao-Shu Hung
+          * include/lcd_support.h
+          * src/banner.xpm 
+	  * src/font.h
+	  * src/lcd_support.c
+          Update LCD drivers for Samsung ARM9/SMDK2440
+2003-08-06  Michael Anburaj <embeddedeng@hotmail.com>
+   
+          * cdl/hal_arm_arm9_smdk2440.cdl:
+          * include/hal_diag.h:
+          * include/hal_platform_ints.h:
+          * include/hal_platform_setup.h:
+          * include/memcfg.h:
+          * include/pkgconf/mlt_arm_arm9_smdk2440_ram.h:
+          * include/pkgconf/mlt_arm_arm9_smdk2440_ram.ldi:
+          * include/pkgconf/mlt_arm_arm9_smdk2440_rom.h:
+          * include/pkgconf/mlt_arm_arm9_smdk2440_rom.ldi:
+          * include/pkgconf/mlt_arm_arm9_smdk2440_romram.h:
+          * include/pkgconf/mlt_arm_arm9_smdk2440_romram.ldi:
+          * include/plf_io.h:
+          * include/plf_stub.h:
+          * include/s3c2440x.h:
+          * misc/smdk2440_redboot_RAM.ecm:
+          * misc/smdk2440_redboot_ROMRAM.ecm:
+          * src/hal_diag.c:
+          * src/smdk2440_misc.c:
+          New package for the Samsung ARM9/SMDK2440 development
+          board.
+  

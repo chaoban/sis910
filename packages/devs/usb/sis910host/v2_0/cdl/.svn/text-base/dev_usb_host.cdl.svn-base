@@ -1,0 +1,75 @@
+# ====================================================================
+#
+#      usb_host_dev.cdl
+#
+#      eCos sis CRT module configuration data
+#
+# ====================================================================
+
+# ====================================================================
+######DESCRIPTIONBEGIN####
+#
+# Author(s):      Tammy Tseng
+# Contributors:
+# Date:           2008-06-30
+#
+#####DESCRIPTIONEND####
+# ====================================================================
+cdl_package CYGPKG_DEVS_USB_HOST {
+    parent      CYGPKG_IO_DISK_DEVICES
+    active_if   CYGPKG_IO_DISK
+    display     "SIS910 USB HOST Device Driver"
+    include_dir cyg/io
+#    implements  CYGPKG_IO_USB_HOST
+	compile		-library=libextras.a driver.c usb.c urb.c ehci.c otg.c mass.c hcd.c ohci.c ehci.c
+	requires	CYGPKG_ERROR CYGPKG_LIBC_STRING     
+	
+	cdl_option CYGDAT_DEVS_DISK_USB_DISK_NAME {
+	    display		"Device name for the USB device"
+	    flavor		data
+	    default_value	{ "\"/dev/usbblk0/\"" }
+	    description "
+                This is the device name used to access the raw disk device
+                in eCos, for example for mount operations. Note that the
+                trailing slash must be present."
+	}
+
+    cdl_component CYGDBG_USB_DEBUG {
+        display       "Enable usb main layer debugging"
+        flavor        bool
+        default_value 0
+        description   "
+            This option enables debugging information from
+            the USB driver package of main layer."
+    }	
+
+    cdl_component CYGDBG_USB_DEBUG_HCD {
+        display       "Enable usb HCD layer debugging"
+        flavor        bool
+        default_value 0
+        description   "
+            This option enables debugging information from
+            the USB driver package of HCD layer."
+    }
+   
+    cdl_component CYGDBG_USB_DEBUG_CTRL {
+        display       "Enable usb CTRL layer debugging"
+        flavor        bool
+        default_value 0
+        description   "
+            This option enables debugging information from
+            the USB driver package of CTRL layer."
+    }
+
+    cdl_component CYGDBG_USB_DEBUG_BULK {
+        display       "Enable usb BULK debugging"
+        flavor        bool
+        default_value 0
+        description   "
+            This option enables debugging information from
+            the USB driver package of BULK layer."
+    }
+	
+}
+
+

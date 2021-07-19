@@ -1,0 +1,52 @@
+8
+
+dir
+560
+http://172.18.204.110/svn/sis910/trunk/sis910/ecos-2.0/packages/hal/calmrisc16/ceb/v2_0/misc
+http://172.18.204.110/svn/sis910
+
+
+
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6c704c55-9005-d446-bb83-9136561f5d83
+
+readme.txt
+file
+
+
+
+
+2009-03-25T14:16:47.409041Z
+b89de9c477170dd89800b613dfee137d
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+
+redboot_ROM.ecm
+file
+
+
+
+
+2009-03-25T14:16:47.424666Z
+7ae655d23eb4b3bb0eb09c1f55759f54
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+

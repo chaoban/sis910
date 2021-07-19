@@ -1,0 +1,49 @@
+# ====================================================================
+#
+#      aud_aac.cdl
+#
+#      eCos AT91SAM7 CAN module configuration data
+#
+# ====================================================================
+
+# ====================================================================
+######DESCRIPTIONBEGIN####
+#
+# Author(s):      Jiao Rongmei
+# Contributors:
+# Date:           2008-03-24
+#
+#####DESCRIPTIONEND####
+# ====================================================================
+
+cdl_package CYGPKG_DEVS_AUD_AAC {
+	display "AAC Audio Decoder Device Driver"
+
+	description "
+		The AAC decoder is part of Audio Decoder Device Driver."
+	        
+	compile  common.c bits.c drc.c huffman.c cfft.c filtbank.c mdct.c\
+           is.c ms.c pns.c tns.c pulse.c syntax.c specrec.c mp4.c\
+           ic_predict.c lt_predict.c ps_syntax.c ps_dec.c sbr_dct.c\
+           sbr_e_nf.c sbr_fbt.c sbr_hfadj.c sbr_hfgen.c sbr_qmf.c\
+           sbr_tf_grid.c sbr_huff.c sbr_syntax.c sbr_dec.c hcr.c rvlc.c\
+           mp4ff.c mp4sample.c mp4atom.c mp4util.c output.c audio.c\
+           aacdec.c
+
+	cdl_option OUTPUT_AAC_PERFORMANCE {
+		display "Print the performance information to a LOG file"
+		description "
+			whether write the performance information to a LOG file or not"
+		flavor  bool
+		default_value 0
+	}
+	
+	cdl_option AAC_WRITE_WAV {
+		display "Write PCM to a .wav file"
+		description "
+			whether write a output .wav file or not"
+		flavor  bool
+		default_value 1
+	}
+           
+}

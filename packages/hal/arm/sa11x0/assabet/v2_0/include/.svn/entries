@@ -1,0 +1,79 @@
+8
+
+dir
+560
+http://172.18.204.110/svn/sis910/trunk/sis910/ecos-2.0/packages/hal/arm/sa11x0/assabet/v2_0/include
+http://172.18.204.110/svn/sis910
+
+
+
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6c704c55-9005-d446-bb83-9136561f5d83
+
+plf_mmap.h
+file
+
+
+
+
+2009-03-25T14:15:48.439914Z
+986a85ffecf35412591ced207953ddc2
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+
+pkgconf
+dir
+
+assabet.h
+file
+
+
+
+
+2009-03-25T14:15:48.455539Z
+1cd879b09583e624c3fb4a0620e43647
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+
+hal_platform_setup.h
+file
+
+
+
+
+2009-03-25T14:15:48.455539Z
+d4753cd34e1bb9154111e963ce2efe87
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+
+plf_io.h
+file
+
+
+
+
+2009-03-25T14:15:48.533664Z
+025756615037bb1713e188f7ea158d36
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+

@@ -1,0 +1,222 @@
+8
+
+dir
+560
+http://172.18.204.110/svn/sis910/trunk/sis910/ecos-2.0/packages/services/gfx/mw/v2_0/src/fonts
+http://172.18.204.110/svn/sis910
+
+
+
+2008-11-14T08:09:42.250000Z
+411
+sis2882
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6c704c55-9005-d446-bb83-9136561f5d83
+
+korean
+dir
+
+truetype
+dir
+
+Objects.rules
+file
+
+
+
+
+2009-03-25T14:11:36.891429Z
+aa5b54a43ea9229bfb47e11ffd389ad8
+2008-04-17T22:03:20.078125Z
+31
+sis2882
+
+X6x13.bdf
+file
+
+
+
+
+2009-03-25T14:11:36.907054Z
+069fb72545d6a6ea521ab0f5a7f452bf
+2008-04-17T22:03:20.078125Z
+31
+sis2882
+
+japanese
+dir
+
+rom8x8.c
+file
+
+
+
+
+2009-03-25T14:11:36.922679Z
+c5d2a32564b0047fed47e0a771b74a7a
+2008-04-17T22:03:20.078125Z
+31
+sis2882
+
+symbol.c
+file
+
+
+
+
+2009-03-25T14:11:36.953929Z
+27ec700184677e3870af1323b2b1d766
+2008-04-17T22:03:20.078125Z
+31
+sis2882
+
+winFreeSystem14x16.fon
+file
+
+
+
+
+2009-03-25T14:11:36.953929Z
+c0b77bbefcda5ef592eeeccfd7ba0c39
+2008-04-17T22:03:20.078125Z
+31
+sis2882
+has-props
+
+winFreeSystem14x16.c
+file
+
+
+
+
+2009-03-25T14:11:36.969554Z
+bc08e00039fb20477571f6c8c7b8d04a
+2008-11-14T08:09:42.250000Z
+411
+sis2882
+
+bdf
+dir
+
+winFreeSansSerif11x13.c
+file
+
+
+
+
+2009-03-25T14:11:37.000804Z
+737e873d34d04614a879ae6aa5ee5e76
+2008-04-17T22:03:20.078125Z
+31
+sis2882
+
+winFreeSansSerif11x13.fon
+file
+
+
+
+
+2009-03-25T14:11:36.985179Z
+7bccac75155114afece957046dc0d495
+2008-04-17T22:03:20.078125Z
+31
+sis2882
+has-props
+
+obsolete.c
+file
+
+
+
+
+2009-03-25T14:11:37.016430Z
+785b7d12700a6f78bcb2463c97ece228
+2008-04-17T22:03:20.078125Z
+31
+sis2882
+
+nano-X.cfg
+file
+
+
+
+
+2009-03-25T14:11:37.016430Z
+535578f647583fe4b4eeaff522ed5067
+2008-04-17T22:03:20.078125Z
+31
+sis2882
+
+tools
+dir
+
+convbdf.c
+file
+
+
+
+
+2009-03-25T14:11:37.563308Z
+37b67aab04fa6081ef4d631b4269a4ce
+2008-04-17T22:03:20.078125Z
+31
+sis2882
+
+rom8x16.c
+file
+
+
+
+
+2009-03-25T14:11:37.578933Z
+ad7770f643024b6f96ca83c863ec8ea4
+2008-04-17T22:03:20.078125Z
+31
+sis2882
+
+pcf
+dir
+
+t1lib
+dir
+
+Makefile
+file
+
+
+
+
+2009-03-25T14:11:37.594558Z
+b33efcdb2af927413b069d0119d2fc0a
+2008-04-17T22:03:20.078125Z
+31
+sis2882
+
+.cvsignore
+file
+
+
+
+
+2009-03-25T14:11:37.610183Z
+488f0c41a36feb0e3c34a18494aefd3f
+2008-04-17T22:03:20.078125Z
+31
+sis2882
+
+chinese
+dir
+

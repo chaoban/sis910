@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/sis910/!svn/ver/572/trunk/sis910/ecos-2.0/packages/devs/usb/sis910host/v2_0/test
+END
+usb_test_host_OK.c
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/sis910/!svn/ver/572/trunk/sis910/ecos-2.0/packages/devs/usb/sis910host/v2_0/test/usb_test_host_OK.c
+END
+usb_test_hotplug.c
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/sis910/!svn/ver/570/trunk/sis910/ecos-2.0/packages/devs/usb/sis910host/v2_0/test/usb_test_hotplug.c
+END

@@ -1,0 +1,17 @@
+cdl_savefile_version 1;
+cdl_savefile_command cdl_savefile_version {};
+cdl_savefile_command cdl_savefile_command {};
+cdl_savefile_command cdl_configuration { description hardware template package };
+cdl_savefile_command cdl_package { value_source user_value wizard_value inferred_value };
+cdl_savefile_command cdl_component { value_source user_value wizard_value inferred_value };
+cdl_savefile_command cdl_option { value_source user_value wizard_value inferred_value };
+cdl_savefile_command cdl_interface { value_source user_value wizard_value inferred_value };
+
+cdl_component CYG_HAL_STARTUP {
+    user_value FLOPPY
+};
+
+cdl_option CYGNUM_HAL_VIRTUAL_VECTOR_CONSOLE_CHANNEL_DEFAULT {
+  user_value 2
+};
+

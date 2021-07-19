@@ -1,0 +1,16 @@
+PKG_INSTALL_DIR = /workdir/hw1_g2d/untitled_install
+XCC = i386-elf-gcc
+
+CFLAGS	= -g -Wall -I$(PKG_INSTALL_DIR)/include -ffunction-sections -fdata-sections
+LDFLAGS	= -nostartfiles -L$(PKG_INSTALL_DIR)/lib -Wl,--gc-sections -Wl,--Map -Wl,G2D_test.map
+LIBS	= -Ttarget.ld -nostdlib
+LD      = $(XCC)
+## Build rules.
+
+all: G2D_test
+G2D_test : G2D_test.o
+	$(LD) $(LDFLAGS) -o $@ $@.o $(LIBS)
+G2D_test.o : G2D_test.c
+	$(XCC) -c -o $*.o $(CFLAGS) $<
+clean:
+	-rm G2D_test.o G2D_test.map

@@ -1,0 +1,124 @@
+# ====================================================================
+#
+#      io_aud.cdl
+#
+#      eCos AT91SAM7 CAN module configuration data
+#
+# ====================================================================
+
+# ====================================================================
+######DESCRIPTIONBEGIN####
+#
+# Author(s):      
+# Contributors:
+# Date:           2008-03-03
+#
+#####DESCRIPTIONEND####
+# ====================================================================
+
+cdl_package CYGPKG_IO_AUD {
+	display "Audio Decoder IO Interface"
+
+	description " "		
+
+	include_dir  cyg/io/aud
+
+	compile	UB.c data_transfer.c adecctrl.c adeccmd.c
+	
+	cdl_option AUD_IO_DEBUG {
+		display "Output Audio IO Interface Debug Message"
+		flavor  bool
+		default_value  0
+	}
+
+	cdl_option AUD_TIME_CONTROL {
+		display "Time Control"
+		flavor bool
+		default_value 0
+	}
+
+	cdl_option DECODER_THREAD_STACK_SIZE {
+		display "The Stack Size of Audio Decoder Thread"
+		flavor data
+		default_value 16384
+		legal_values 1024 to 65536
+	}
+
+	cdl_option DEF_ABV_THRESHOLD {
+		display "The Threshold for ABV Buffer"
+		flavor data
+		default_value 8192
+		legal_values 4096 to 4194304
+	}
+
+	cdl_option DEF_DBV_THRESHOLD {
+		display "The Threshold for DBV Buffer"
+		flavor data
+		default_value 10240
+		legal_values 8192 to 20480
+	}
+
+	cdl_option MAX_ADEC_THREADS {
+		display "Max Number of Audio Decoder Thread"
+		flavor  data
+		default_value 4
+		legal_values  1 to 6
+		description  "
+			The player can handle 6 kinds of audio format, mp3, wma, aac, ogg, 
+			ac3, dts. "
+	}
+
+	cdl_option MAX_ADEC_NUM {
+		display "Max Number of Audio Decoder"
+		flavor data
+		default_value 4
+		legal_values 1 to 8
+		description "
+			Max audio decoder number."
+	}
+
+	cdl_option MAX_NUM_CHANNEL {
+		display "Max Number of Channels for Speaker"
+		flavor  data
+		default_value 2
+		legal_values 1 to 8
+		description "
+			The speaker can support 7.1 channels at most in future, but now only
+			handle dual channels."
+	}
+
+	cdl_option OUTPUT_WAV_BY_NET {
+		display "output data by network"
+		flavor bool
+		default_value false
+		description "
+			The target PC with eCos is the server that write data through socket 
+			descriptor from which the client read data."
+	}
+
+	cdl_component IO_MSG_QUEUE_CTRL {
+		display "Message Control Block of IO Interface"
+		flavor bool
+		default_value 1
+
+		cdl_option ECOS_MSG_API {
+			display "Enable Message Queue API of eCos"
+			flavor bool
+			default_value 0
+		}
+		
+		cdl_option MAX_QUEUE_NUM {
+			display "Max Number of Message Queue"
+			flavor data
+			default_value  2
+			legal_values 1 to 6
+		}
+
+		cdl_option MAX_QUEUE_SIZE {
+			display "Max Size of Message Queue"
+			flavor data
+			default_value 3
+			legal_values 1 to 20
+		}
+	}
+}

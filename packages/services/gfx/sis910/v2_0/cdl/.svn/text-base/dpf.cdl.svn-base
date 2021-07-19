@@ -1,0 +1,135 @@
+# ====================================================================
+#
+#      dpf.cdl
+#
+#      MicroWindows configuration data
+#
+# ====================================================================
+
+cdl_package CYGPKG_SiS910_AP {
+    display       "SiS910 AP"
+    requires      CYGPKG_MICROWINDOWS
+    requires      CYGPKG_TINYWIDGET
+    description   "SiS910 AP."
+    
+    #config
+    cdl_option CYGBLD_MICROWINDOWS_SiS910_CONFIG {
+        display   "Build SiS910 Config"
+        default_value 1
+        
+        compile config/config.c config/hash.c
+    }
+    #global function
+    cdl_option CYGBLD_MICROWINDOWS_SiS910_GLOBAL {
+        display    "Build SiS910 global function"
+        default_value 1
+        
+        compile share/global.c share/browser.c 
+     }
+
+    # demo     
+    cdl_option CYGBLD_MICROWINDOWS_SiS910_DEMO {
+        display   "Build SiS910 Test Demos"
+        default_value 1
+        
+    #    compile demo/test.c
+    }
+    
+    # desktop
+    cdl_option CYGBLD_MICROWINDOWS_SiS910_DESKTOP {
+        display   "Build SiS910 DESKTOP"
+        default_value 1
+        
+        compile desktop/desktop.c
+        #desktop/desktop_rotate.c
+    }
+    
+    # Audio Player
+    cdl_option CYGBLD_MICROWINDOWS_SiS910_AUDIO_PLAYER {
+        display   "Build SiS910 Audio Player"
+        default_value 1
+        
+        compile aplayer/audioplayer.c aplayer/common.c aplayer/decoder.c aplayer/display.c aplayer/engine.c aplayer/handle.c
+    }
+    
+    # Photo Browser
+    cdl_option CYGBLD_MICROWINDOWS_SiS910_PHOTO_BROWSER {
+        display   "Build SiS910 Photo Browser"
+        default_value 1
+        
+        compile pbrowse/photo.c
+    }
+    
+    
+    #File Browser
+    cdl_option CYGBLD_MICROWINDOWS_SiS910_FILE_BROWSER {
+        display   "Build SiS910 File Browser"
+        default_value 1
+        
+        compile fbrowse/fbrowser_main.c fbrowse/fatfs1.c
+    }
+    
+    
+    #Settings
+    cdl_option CYGBLD_MICROWINDOWS_SiS910_SETTINGS {
+        display   "Build SiS910 Settings"
+        default_value 1
+        
+        compile setting/setting.c
+    }                           
+    
+    #Clock
+    cdl_option CYGBLD_MICROWINDOWS_SiS910_CLOCK {
+        display   "Build SiS910 CLOCK"
+        default_value 1
+        
+        compile clock/clock_main.c clock/event_handle.c clock/calendar.c clock/worldtime.c
+    } 
+     
+    #Text Reader
+    cdl_option CYGBLD_MICROWINDOWS_SiS910_READER {
+        display   "Build SiS910 Text Reader"
+        default_value 1
+        
+        compile reader/reader.c  reader/common.c reader/recent.c reader/bookmarker.c  reader/tr_engine.c
+    }
+    
+    #eCos stuff
+    cdl_component CYGBLD_MICROWINDOWS_SiS910_ECOS {
+        display   "Build complete eCos+MicroWindows+SiS910 application"
+        default_value 0
+    
+        # These files are unique to eCos
+        #compile ecos/ecos_init.c 
+        #compile -library=libextras.a threads/aplayer_thread.c
+
+        make -priority 320 {
+            <PREFIX>/bin/ecos_mw_910.elf : $(PREFIX)/lib/target.ld $(PREFIX)/lib/vectors.o $(PREFIX)/lib/libtarget.a $(REPOSITORY)/$(PACKAGE)/src/desktop/template.c
+                    @sh -c "mkdir -p $(dir $@)"
+                    $(CC) -c $(INCLUDE_PATH) $(CFLAGS) -o $(PREFIX)/lib/ecos_app.o $(REPOSITORY)/$(PACKAGE)/src/desktop/template.c
+                    $(CC) $(LDFLAGS) -L$(PREFIX)/lib -Ttarget.ld -o $@ $(PREFIX)/lib/ecos_app.o
+        }
+            
+        cdl_option CYGBLD_MICROWINDOWS_SiS910AP_BIN {
+            display       "Build binary image"
+            default_value 0
+    
+            make -priority 325 {
+                <PREFIX>/bin/ecos_mw_910.bin : <PREFIX>/bin/ecos_mw_910.elf
+                $(OBJCOPY) -O binary $< $@
+            }
+        }
+   
+    }
+    cdl_option CYGPKG_SiS910_AP_CFLAGS_ADD {
+            display "Additional compiler flags"
+            flavor  data
+            no_define
+            default_value { "-I$(PREFIX)/include/microwin -I$(PREFIX)/include/tinywidget -D__ECOS=1 -DMSDOS=0 -DELKS=0 -D__rtems__=0 -D_MINIX=0 -DNOTYET=0 -DUNIX=1 -DHAVE_FILEIO -DHAVE_BMP_SUPPORT=1 -DHAVE_PNM_SUPPORT=1 -DHAVE_XPM_SUPPORT=1 -DxHAVE_JPEG_SUPPORT=1 -DHAVESELECT=1" }
+            description   "
+                This option modifies the set of compiler flags for
+                building SiS910 package.
+                These flags are used in addition to the set of global flags."
+    }    
+}
+

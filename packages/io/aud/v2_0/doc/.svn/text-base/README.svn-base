@@ -1,0 +1,172 @@
+		    README For NTT(Net Transfer Tool)
+
+I. Introduction
+   NTT(Net Transfer Tool) is used to transfer data from eCos target PC to local
+PC. NTT in eCos target PC is "client", and NTT in local PC is "server". The socket
+stream between them is based on "TCP", but reality of transferring mode is "UDP".
+So we must pay more attentions while using NTT to transfer data. The reason is that
+the application interface "accept" of socket can't locate the correct IP address of
+client. I just take a compromise to resolve this problem. This is why the transferr-
+ing mode looks like "UDP".
+
+II. Usage
+   The APIs for NTT are defined under "reposity/packages/io/aud". Firstly, the NET_
+Data_init() should be called during initialization period. This function initializes
+ethernet devices and establishes the socket stream.
+   Secondly, you can create folders to store the wave files by command "-d n". The 
+detail of command is described in the third part. You can create new child folder 
+under father folder. The max number for folder deepth is 8, but now we only support
+2 folder deepth.
+   Thirdly, the wave header can be writen by command "-h". The parameters are specifed
+in structure _wavhead which has members stereo, samplerate, samplewidth and wavsize.
+The stereo presents the number of channels, the samplerate presents sample rate, the
+samplewidth presents the bits width per sample, wavsize is the size of wave file.
+   Lastly, the main data is transferred by command "-i n" or "-I n". You can transfer
+data whose length is specified by "n".
+   Note that NTT is a test tool for debug, so you must add "#ifdef OUTPUT_DATA_BY_NET"
+and "#endif" for debug. The requirements are included header files, "<pkgconf/io_aud.h>"
+and "<cyg/io/aud/data_transfer.h>". 
+
+III. Command Format
+   There are 5 commands for NTT. They are introduced below:
+   
+   Make directory:
+    -d n	create folder whose deepth is specified by "n", such as "-d 1", "-d 2".
+    -D n	same as "-d n".
+
+   Open file:
+    -f		create wave file.
+    -F		same as "-f".
+
+   Write wave header:
+    -h		write wave header.
+
+   Write wave data:
+    -i n	write wave data. n = 1 or 2 for mp3 format.
+    -I n	write wave data. "n" is the number of sample to be transferred.
+
+   Close wave file:
+    -o		close wave file description.
+    -O		same as "-o".
+
+IV. Examples
+   Initialization of NTT:
+#include <pkgconf/io_aud.h>
+#include <cyg/io/aud/data_transfer.h>   
+
+    xxx_xxx_init()
+    {
+	...
+
+#ifdef OUTPUT_DATA_BY_NET	    
+	NET_Data_init();
+#endif	
+
+	...
+    }
+
+   Create folders:
+
+#ifdef OUTPUT_DATA_BY_NET
+extern int dir_deep;
+extern char net_outdir[][64];
+extern char net_outfile[]; 
+#endif
+
+#include <pkgconf/io_aud.h>
+#include <cyg/io/aud/data_transfer.h>   
+
+    xxx_xxx_init()
+    {
+	char cmd[8];
+	...
+
+#ifdef OUTPUT_DATA_BY_NET	    
+	NET_Data_init();
+#endif	
+
+	...
+
+#ifdef OUTPUT_DATA_BY_NET
+	strcpy(net_outdir[dir_deep], DIR);
+	dir_deep = 1;
+	strcpy(cmd, "-d 1");
+	NET_Data_transfer(cmd, strlen(cmd)+1);
+	NET_Data_transfer(net_outdir[dir_deep - 1], strlen(net_outdir[dir_deep-1])+1);
+#endif
+
+	...
+    }
+
+   Create & write wave file:
+#include <pkgconf/io_aud.h>
+#include <cyg/io/aud/data_transfer.h>
+
+    xxx_xxx_decode()
+    {
+	...
+
+#ifdef OUTPUT_DATA_BY_NET
+	cyg_thread_delay(50);	// delay for create file
+	strcpy(cmd, "-f");
+	NET_Data_transfer(cmd, strlen(cmd)+1);
+	strtok(net_outfile, ".");
+	strcat(net_outfile, ".wav");
+	NET_Data_transfer(net_outfile, strlen(net_outfile)+1);
+	cyg_thread_delay(50);	// delay for write WAV header
+	strcpy(cmd, "-h");
+	NET_Data_transfer(cmd, strlen(cmd)+1);
+	wavhead.stereo = mp3data.stereo;
+	wavhead.samplerate = mp3data.samplerate;
+	wavhead.samplewidth = 16;
+	wavhead.wavsize = 0x7fffffff;
+	cyg_thread_delay(20);	// delay for write WAV header
+	NET_Data_transfer((char *)&wavhead, sizeof(wavhead));
+	cyg_thread_delay(50);	
+#endif	    
+
+	...
+
+	/* main loop for decoding */
+	do
+	{
+	    ...
+
+#ifdef OUTPUT_DATA_BY_NET
+	    if(iread == 576)
+		strcpy(cmd, "-i 1");
+	    if(iread == 1152)
+		strcpy(cmd, "-i 2");
+	    NET_Data_transfer(cmd, strlen(cmd)+1);
+	    cyg_thread_delay(25);
+	    begin = i;
+	    for( ; i < iread; i++){						
+		net_buf[i].left = output_pcm[0][i];	
+		net_buf[i].right = output_pcm[1][i];	
+	    }
+	    if((i - begin) > 0){
+		NET_Data_transfer((char *)net_buf, (i-begin)*4);
+		cyg_thread_delay(40);
+	    }
+#endif
+	}while(...)
+	    
+#ifdef OUTPUT_DATA_BY_NET
+	wavesize *= (2 * mp3data.stereo);
+		
+	strcpy(cmd, "-o");
+	NET_Data_transfer(cmd, strlen(cmd)+1);	
+	cyg_thread_delay(15);
+	wavhead.stereo = mp3data.stereo;
+	wavhead.samplerate = mp3data.samplerate;
+	wavhead.samplewidth = 16;
+	wavhead.wavsize = wavesize;
+	NET_Data_transfer((char *)&wavhead, sizeof(wavhead));
+	cyg_thread_delay(50);
+#endif
+
+	...
+	
+    }
+
+   

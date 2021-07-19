@@ -1,0 +1,40 @@
+8
+
+dir
+572
+http://172.18.204.110/svn/sis910/trunk/sis910/ecos-2.0/packages/devs/spi/r16/sis910/v2_0/cdl
+http://172.18.204.110/svn/sis910
+
+
+
+2008-06-04T21:54:05.296875Z
+135
+sis4172
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6c704c55-9005-d446-bb83-9136561f5d83
+
+spi_sis910.cdl
+file
+
+
+
+
+2009-03-25T14:14:38.892594Z
+512d9a186d35f6ddf6e1c98f4559fa49
+2008-06-04T21:54:05.296875Z
+135
+sis4172
+

@@ -1,0 +1,52 @@
+8
+
+dir
+560
+http://172.18.204.110/svn/sis910/trunk/sis910/ecos-2.0/packages/hal/powerpc/quicc/v2_0/src
+http://172.18.204.110/svn/sis910
+
+
+
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6c704c55-9005-d446-bb83-9136561f5d83
+
+cpm.c
+file
+
+
+
+
+2009-03-25T14:16:15.268210Z
+f7d94f7e171c7bde6b8b3d74767cc8b4
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+
+quicc_smc1.c
+file
+
+
+
+
+2009-03-25T14:16:15.283835Z
+2c669f903584e4d5092002579eb84fa0
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+

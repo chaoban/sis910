@@ -1,0 +1,79 @@
+8
+
+dir
+560
+http://172.18.204.110/svn/sis910/trunk/sis910/ecos-2.0/packages/hal/arm/sa11x0/brutus/v2_0/include
+http://172.18.204.110/svn/sis910
+
+
+
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6c704c55-9005-d446-bb83-9136561f5d83
+
+plf_mmap.h
+file
+
+
+
+
+2009-03-25T14:15:50.018049Z
+695f28a9aede2af5e79f4b139ec5470c
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+
+pkgconf
+dir
+
+brutus.h
+file
+
+
+
+
+2009-03-25T14:15:50.033674Z
+f0aa29afa4878123deaaab09f88e86b4
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+
+hal_platform_setup.h
+file
+
+
+
+
+2009-03-25T14:15:50.033674Z
+07c7e030d84a6ae05947a086f69aa3fa
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+
+plf_io.h
+file
+
+
+
+
+2009-03-25T14:15:50.049299Z
+792fd0e966e4efd441b4ff05e2550174
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+

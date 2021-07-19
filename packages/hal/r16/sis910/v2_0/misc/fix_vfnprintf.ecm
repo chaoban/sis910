@@ -1,0 +1,6 @@
+cdl_option CYGPKG_LIBC_STDIO_CFLAGS_ADD {
+    # Flavor: data
+    user_value -O0
+    # value_source user
+    # Default value: ""
+};

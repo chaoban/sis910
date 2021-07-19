@@ -1,0 +1,40 @@
+8
+
+dir
+572
+http://172.18.204.110/svn/sis910/trunk/sis910/ecos-2.0/packages/io/usb/sis910host/v2_0/cdl
+http://172.18.204.110/svn/sis910
+
+
+
+2009-03-19T06:15:47.046875Z
+556
+sis4580
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6c704c55-9005-d446-bb83-9136561f5d83
+
+io_usb_host.cdl
+file
+
+
+
+
+2009-03-25T14:17:36.346854Z
+7c0238a17fe450bfa4155a1d11b794e1
+2009-03-19T06:15:47.046875Z
+556
+sis4580
+

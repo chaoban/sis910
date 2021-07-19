@@ -1,0 +1,82 @@
+8
+
+dir
+560
+http://172.18.204.110/svn/sis910/trunk/sis910/ecos-2.0/packages/hal/mips
+http://172.18.204.110/svn/sis910
+
+
+
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6c704c55-9005-d446-bb83-9136561f5d83
+
+idt32334
+dir
+
+vrc437x
+dir
+
+mips64
+dir
+
+rm7000
+dir
+
+sim
+dir
+
+malta
+dir
+
+vr4300
+dir
+
+ref4955
+dir
+
+atlas
+dir
+
+tx39
+dir
+
+jmr3904
+dir
+
+tx49
+dir
+
+vrc4373
+dir
+
+vrc4375
+dir
+
+arch
+dir
+
+mips32
+dir
+
+upd985xx
+dir
+
+idt79s334a
+dir
+

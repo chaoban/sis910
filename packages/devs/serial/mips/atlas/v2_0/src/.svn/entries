@@ -1,0 +1,52 @@
+8
+
+dir
+572
+http://172.18.204.110/svn/sis910/trunk/sis910/ecos-2.0/packages/devs/serial/mips/atlas/v2_0/src
+http://172.18.204.110/svn/sis910
+
+
+
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6c704c55-9005-d446-bb83-9136561f5d83
+
+atlas_serial.c
+file
+
+
+
+
+2009-03-25T14:13:56.673573Z
+16efba16cb4ef27ca361a9b8f1fbd008
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+
+atlas_serial.h
+file
+
+
+
+
+2009-03-25T14:13:56.689198Z
+b26b3ff7242af7cf87d80322a8b96248
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+

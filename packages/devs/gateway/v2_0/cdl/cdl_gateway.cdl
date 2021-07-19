@@ -1,0 +1,29 @@
+# ====================================================================
+#
+#      GATEWAY.cdl
+#
+#      eCos SisGATEWAY module configuration data
+#
+# ====================================================================
+
+# ====================================================================
+######DESCRIPTIONBEGIN####
+#
+# Author(s):      Tracy Tsui .
+# Contributors:
+# Date:           2008-05-23
+#
+# Q : I think I should not contain : implements CYGHWR_IO_USB_SLAVE , that's IR's business .!!
+#####DESCRIPTIONEND####
+# ====================================================================
+
+cdl_package CYGPKG_DEVS_GATEWAY {
+	display "SIS910 GATEWAY Driver"
+	include_dir "cyg/devs/gateway"
+	description "The GATEWAY driver Module of sis910 project"
+	implements  CYGHWR_IO_GATEWAY
+	
+	
+	compile -library=libextras.a Gateway.c  
+}
+

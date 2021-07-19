@@ -1,0 +1,67 @@
+8
+
+dir
+560
+http://172.18.204.110/svn/sis910/trunk/sis910/ecos-2.0/packages/net/snmp/agent/v2_0/doc
+http://172.18.204.110/svn/sis910
+
+
+
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6c704c55-9005-d446-bb83-9136561f5d83
+
+prepare-manpages.sh
+file
+
+
+
+
+2009-03-25T14:13:33.064047Z
+17494de9c36e86a30cafdd52ab033851
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+
+snmp-manpages.sgml
+file
+
+
+
+
+2009-03-25T14:13:33.064047Z
+e32bd8675db54ba091d9c8b2e8692508
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+
+manpages
+dir
+
+snmp.sgml
+file
+
+
+
+
+2009-03-25T14:13:33.079672Z
+a42289290a695edc08444d206e99f351
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+

@@ -1,0 +1,30 @@
+# ====================================================================
+#
+#      memmanage_sis910.cdl
+#
+#      Provide some macro or func to manage memory or sync/flush
+#
+# ====================================================================
+######DESCRIPTIONBEGIN####
+#
+# Author:       Sidney Shih
+# Date:         2009-03-05
+#
+#####DESCRIPTIONEND####
+# ====================================================================
+
+cdl_package CYGPKG_SERVICE_MEM_MANAGE_SIS910 {
+    display     "SiS 910 memory memagement"
+    include_dir     memmanage
+
+	cdl_option CYGPKG_SERVICE_MEM_MANAGE_SIS910_DCACHE_SIZE {
+	    display		"Data cache size of RISC (in KBytes)"
+	    flavor		data
+	    default_value	{ "4" }
+	    description "
+                This is the data cache size of RISC, and it's must
+                be in KBytes uints."
+	}
+}
+
+# EOF memmanage_sis910.cdl

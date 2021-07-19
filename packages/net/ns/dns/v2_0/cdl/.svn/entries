@@ -1,0 +1,40 @@
+8
+
+dir
+560
+http://172.18.204.110/svn/sis910/trunk/sis910/ecos-2.0/packages/net/ns/dns/v2_0/cdl
+http://172.18.204.110/svn/sis910
+
+
+
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6c704c55-9005-d446-bb83-9136561f5d83
+
+dns.cdl
+file
+
+
+
+
+2009-03-25T14:13:15.345184Z
+a8d3ea3babddad585b1df9f18b5fa6d0
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+

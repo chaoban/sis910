@@ -1,0 +1,52 @@
+8
+
+dir
+560
+http://172.18.204.110/svn/sis910/trunk/sis910/ecos-2.0/packages/templates/redboot
+http://172.18.204.110/svn/sis910
+
+
+
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6c704c55-9005-d446-bb83-9136561f5d83
+
+v2_0.ect
+file
+
+
+
+
+2009-03-25T14:13:39.345337Z
+69b1a1b6aa11879081b21e4a90081d7d
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+
+ChangeLog
+file
+
+
+
+
+2009-03-25T14:13:39.345337Z
+0d78a9e2a93e77a7368986f8fbcc051c
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+

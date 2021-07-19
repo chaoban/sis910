@@ -1,0 +1,40 @@
+8
+
+dir
+560
+http://172.18.204.110/svn/sis910/trunk/sis910/ecos-2.0/packages/hal/r16/arch/v2_0/cdl
+http://172.18.204.110/svn/sis910
+
+
+
+2008-07-29T01:51:03.046875Z
+306
+sis3185
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6c704c55-9005-d446-bb83-9136561f5d83
+
+hal_sh.cdl
+file
+
+
+
+
+2009-03-25T14:17:11.190443Z
+ae3ab37fcfb1048d89dab6cbade260ec
+2008-07-29T01:51:03.046875Z
+306
+sis3185
+

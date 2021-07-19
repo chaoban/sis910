@@ -1,0 +1,52 @@
+8
+
+dir
+572
+http://172.18.204.110/svn/sis910/trunk/sis910/ecos-2.0/packages/devs/serial/arm/edb7xxx/v2_0/src
+http://172.18.204.110/svn/sis910
+
+
+
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6c704c55-9005-d446-bb83-9136561f5d83
+
+edb7xxx_serial.c
+file
+
+
+
+
+2009-03-25T14:13:49.064150Z
+bb70effb354cf7fd96ea1c2135fdb72d
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+
+edb7xxx_serial.h
+file
+
+
+
+
+2009-03-25T14:13:49.079775Z
+1e545d344a4e30a8eea0c182b721f3e3
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+

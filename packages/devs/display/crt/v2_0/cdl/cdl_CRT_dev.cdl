@@ -1,0 +1,44 @@
+# ====================================================================
+#
+#      CRT_dev.cdl
+#
+#      eCos SiS910 CRT module configuration data
+#
+# ====================================================================
+
+# ====================================================================
+######DESCRIPTIONBEGIN####
+#
+# Author(s):      Jiunhau wang
+# Contributors:
+# Date:           2008-05-20
+#
+#####DESCRIPTIONEND####
+# ====================================================================
+
+cdl_package CYGPKG_DEVS_CRT {
+	parent      CYGPKG_IO_CRT
+	display 	"SiS 910 CRT  driver"
+	include_dir "cyg/devs/display/crt"
+	description "The CRT driver Module of SiS910 project"
+	implements  CYGHWR_IO_CRT
+	compile -library=libextras.a Crt_dev.c
+	
+	cdl_component CYGPKG_CRT_PANEL {
+		display       "SiS910 CRT panel."
+		flavor        data
+		legal_values  {"ANALOG" "DIGITAL"}
+		default_value {"DIGITAL"}
+		description   "
+			This option controls the CRT panel classification."	
+	}
+	
+	cdl_component CYGPKG_CRT_SETTING {
+		display       "Show hardware initial setting."
+		flavor        bool
+		default_value 0
+		description   "
+			This option enable to show hardware setting for debug."	
+	}
+}
+

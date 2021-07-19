@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/sis910/!svn/ver/571/trunk/sis910/ecos-2.0/packages/devs/usb/slave/v2_0/test
+END
+usb_test_090608.c
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/sis910/!svn/ver/571/trunk/sis910/ecos-2.0/packages/devs/usb/slave/v2_0/test/usb_test_090608.c
+END
+usb_test_1cmdOK.c
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/sis910/!svn/ver/571/trunk/sis910/ecos-2.0/packages/devs/usb/slave/v2_0/test/usb_test_1cmdOK.c
+END
+usb_test_old.c
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/sis910/!svn/ver/571/trunk/sis910/ecos-2.0/packages/devs/usb/slave/v2_0/test/usb_test_old.c
+END
+usb_test_090610.c
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/sis910/!svn/ver/571/trunk/sis910/ecos-2.0/packages/devs/usb/slave/v2_0/test/usb_test_090610.c
+END
+usb_test_090610fakedisk.c
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/sis910/!svn/ver/571/trunk/sis910/ecos-2.0/packages/devs/usb/slave/v2_0/test/usb_test_090610fakedisk.c
+END
+usb_test_090625.c
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/sis910/!svn/ver/571/trunk/sis910/ecos-2.0/packages/devs/usb/slave/v2_0/test/usb_test_090625.c
+END

@@ -1,0 +1,52 @@
+8
+
+dir
+560
+http://172.18.204.110/svn/sis910/trunk/sis910/ecos-2.0/packages/hal/calmrisc16/ceb/v2_0/support
+http://172.18.204.110/svn/sis910
+
+
+
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6c704c55-9005-d446-bb83-9136561f5d83
+
+calmbreaker.c
+file
+
+
+
+
+2009-03-25T14:16:47.721543Z
+104fbbfea34dc66cbd45b85967cb4414
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+
+README
+file
+
+
+
+
+2009-03-25T14:16:47.768418Z
+7ca6dabda0bf2b0ca2ec5093a1868aae
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+

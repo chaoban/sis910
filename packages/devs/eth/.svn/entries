@@ -1,0 +1,82 @@
+8
+
+dir
+572
+http://172.18.204.110/svn/sis910/trunk/sis910/ecos-2.0/packages/devs/eth
+http://172.18.204.110/svn/sis910
+
+
+
+2008-04-03T00:37:03.765625Z
+19
+sis3185
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6c704c55-9005-d446-bb83-9136561f5d83
+
+powerpc
+dir
+
+arm
+dir
+
+via
+dir
+
+ns
+dir
+
+cf
+dir
+
+i386
+dir
+
+mcf52xx
+dir
+
+frv
+dir
+
+mn10300
+dir
+
+cl
+dir
+
+amd
+dir
+
+h8300
+dir
+
+smsc
+dir
+
+synth
+dir
+
+mips
+dir
+
+sh
+dir
+
+intel
+dir
+
+rltk
+dir
+

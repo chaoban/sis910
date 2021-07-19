@@ -1,0 +1,41 @@
+# ====================================================================
+#
+#      mad_mp3.cdl
+#
+# ====================================================================
+
+# ====================================================================
+######DESCRIPTIONBEGIN####
+#
+# Author(s):      wang wei
+# Contributors:
+# Date:           2008-09-24
+#
+#####DESCRIPTIONEND####
+# ====================================================================
+
+cdl_package CYGPKG_DEVS_MAD_MP3 {
+	display "MAD MP3 Audio Decoder Device Driver"
+
+	description "
+		The MP3 decoder is part of Audio Decoder Device Driver."
+	
+	compile  bit.c  huffman.c  frame.c  layer12.c  layer3.c stream.c synth.c timer.c version.c fixed.c decoder.c mp3_info.c mp3_dec.c
+	
+	cdl_option OUTPUT_WAV {
+		display "output .wav file"
+		flavor bool
+		default_value 0
+	}
+	cdl_option OUTPUT_I2S {
+		display "Output to I2S"
+		flavor bool
+		default_value 1
+	}
+	cdl_option SH3_OPTIMAL {
+		display "Optimal on SH3 platform"
+		flavor bool
+		default_value 0
+	}
+}
+

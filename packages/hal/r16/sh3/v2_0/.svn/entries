@@ -1,0 +1,49 @@
+8
+
+dir
+560
+http://172.18.204.110/svn/sis910/trunk/sis910/ecos-2.0/packages/hal/r16/sh3/v2_0
+http://172.18.204.110/svn/sis910
+
+
+
+2009-02-05T10:12:56.828125Z
+506
+sis4315
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6c704c55-9005-d446-bb83-9136561f5d83
+
+cdl
+dir
+
+include
+dir
+
+src
+dir
+
+ChangeLog
+file
+
+
+
+
+2009-03-25T14:17:13.112331Z
+298d00a21126cbc336ac9b4a0835deba
+2008-04-23T00:03:00.296875Z
+44
+sis3185
+

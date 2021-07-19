@@ -1,0 +1,101 @@
+# ====================================================================
+#
+#      devs_disk_ms_sis910.cdl
+#
+#      Support for Memory Stick cards with SiS 910 platform
+#
+# ====================================================================
+#####ECOSGPLCOPYRIGHTBEGIN####
+## -------------------------------------------
+## This file is part of eCos, the Embedded Configurable Operating System.
+## Copyright (C) 2004, 2005, 2006 eCosCentric Limited
+##
+## eCos is free software; you can redistribute it and/or modify it under
+## the terms of the GNU General Public License as published by the Free
+## Software Foundation; either version 2 or (at your option) any later version.
+##
+## eCos is distributed in the hope that it will be useful, but WITHOUT ANY
+## WARRANTY; without even the implied warranty of MERCHANTABILITY or
+## FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
+## for more details.
+##
+## You should have received a copy of the GNU General Public License along
+## with eCos; if not, write to the Free Software Foundation, Inc.,
+## 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA.
+##
+## As a special exception, if other files instantiate templates or use macros
+## or inline functions from this file, or you compile this file and link it
+## with other works to produce a work based on this file, this file does not
+## by itself cause the resulting work to be covered by the GNU General Public
+## License. However the source code for this file must still be made available
+## in accordance with section (3) of the GNU General Public License.
+##
+## This exception does not invalidate any other reasons why a work based on
+## this file might be covered by the GNU General Public License.
+## -------------------------------------------
+#####ECOSGPLCOPYRIGHTEND####
+# ====================================================================
+######DESCRIPTIONBEGIN####
+#
+# Author(s):      lizhuo
+# Date:           2007-04-01
+# Author(s):      Sidney Shih
+# Date:           2007-09-05
+#
+#####DESCRIPTIONEND####
+# ====================================================================
+
+cdl_package CYGPKG_DEVS_DISK_MEMORYSTICK_SIS910 {
+    parent      CYGPKG_IO_DISK_DEVICES
+    active_if   CYGPKG_IO_DISK
+    display     "Disk driver for Memory Stick cards with SiS 910"
+    include_dir cyg/io
+    compile     -library=libextras.a memorystick_sis910.c
+	requires	CYGPKG_ERROR CYGPKG_LIBC_STRING   
+        
+	cdl_option CYGDAT_IO_DISK_MEMORYSTICK_DISK0_NAME {
+        display       "Device name for Memory Stick disk device"
+        flavor        data
+        default_value {"\"/dev/msblk0/\""}
+	    description "
+                This is the device name used to access the raw disk device
+                in eCos, for example for mount operations. Note that the
+                trailing slash must be present."
+    }
+
+    cdl_option SIS910_MSPRO_DEFAULT_PARALLEL_MODE {
+        display       "Enable parallel transportaion mode"
+        flavor        bool
+        default_value 1
+        description   "
+            This option enables parallel transportation mode
+            for Memory Stick Pro card by default."
+    }
+
+    cdl_option SIS910_READ_MSPRO_THRU_CPU {
+        display       "Enable read card through CPU"
+        flavor        bool
+        default_value 0
+        description   "
+            This option enables read card through CPU not Gateway."
+    }
+
+    cdl_option SIS910_WRITE_MSPRO_THRU_CPU {
+        display       "Enable write card through CPU"
+        flavor        bool
+        default_value 0
+        description   "
+            This option enables write card through CPU not Gateway."
+    }
+    
+    cdl_option SIS910_MSPRO_DEBUG {
+        display       "Enable Memory Stick Pro driver debugging output"
+        flavor        data
+        legal_values  {"0" "1" "2"}
+        default_value {"0"}
+        description   "
+            This option enables Memory Stick Pro driver 
+            debugging information output."
+    }
+}
+# EOF devs_disk_ms_sis910.cdl

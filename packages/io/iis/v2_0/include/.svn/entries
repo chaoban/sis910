@@ -1,0 +1,40 @@
+8
+
+dir
+572
+http://172.18.204.110/svn/sis910/trunk/sis910/ecos-2.0/packages/io/iis/v2_0/include
+http://172.18.204.110/svn/sis910
+
+
+
+2009-02-24T06:21:15.906250Z
+534
+sis4311
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6c704c55-9005-d446-bb83-9136561f5d83
+
+io_iis.h
+file
+
+
+
+
+2009-03-25T14:17:33.456211Z
+1db51d40760e9304b623810e99b9078a
+2009-02-24T06:21:15.906250Z
+534
+sis4311
+

@@ -1,0 +1,40 @@
+8
+
+dir
+572
+http://172.18.204.110/svn/sis910/trunk/sis910/ecos-2.0/packages/devs/eth/cl/cs8900a/v2_0/include
+http://172.18.204.110/svn/sis910
+
+
+
+2008-04-03T00:37:03.765625Z
+19
+sis3185
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6c704c55-9005-d446-bb83-9136561f5d83
+
+cs8900.h
+file
+
+
+
+
+2009-03-25T14:14:18.189336Z
+3644d9c8ad576ae183a7e0cacd6a020e
+2008-04-03T00:37:03.765625Z
+19
+sis3185
+

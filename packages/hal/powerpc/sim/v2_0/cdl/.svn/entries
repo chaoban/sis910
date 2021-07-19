@@ -1,0 +1,40 @@
+8
+
+dir
+560
+http://172.18.204.110/svn/sis910/trunk/sis910/ecos-2.0/packages/hal/powerpc/sim/v2_0/cdl
+http://172.18.204.110/svn/sis910
+
+
+
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6c704c55-9005-d446-bb83-9136561f5d83
+
+hal_powerpc_sim.cdl
+file
+
+
+
+
+2009-03-25T14:16:09.830676Z
+51c40a2061b3c3c554c61b301157b286
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+

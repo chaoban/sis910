@@ -1,0 +1,37 @@
+# ====================================================================
+#
+#      io_IIS.cdl
+#
+#      eCos sis IIS IO module configuration data
+#
+# ====================================================================
+
+# ====================================================================
+######DESCRIPTIONBEGIN####
+#
+# Author(s): wangwei     
+# Contributors:
+# Date:           2008-05-07
+#
+#####DESCRIPTIONEND####
+# ====================================================================
+
+cdl_package CYGPKG_IO_IIS {
+	display "SIS910 I2S IO Interface"
+
+	description " "		
+
+	include_dir  cyg/io/iis
+	cdl_interface CYGHWR_IIS_DEVICE {
+	display     "Availability of IIS hardware"
+    }
+
+	compile	ioiis.c
+	
+	cdl_option CYGGLO_IO_IIS_PROVIDE_DEVTAB_ENTRIES {
+	display         "Provide devtab entries by default"
+	default_value   CYGPKG_IO
+	requires        CYGPKG_IO
+	description "Provide IR IO devtab entries by default"
+    }
+}

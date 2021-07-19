@@ -1,0 +1,31 @@
+#====================================================================
+#
+#      sis910_dac.cdl
+#
+#      SiS910 DAC driver configuration data 
+#
+#====================================================================
+#####ECOSGPLCOPYRIGHTBEGIN####
+
+#####ECOSGPLCOPYRIGHTEND####
+#====================================================================
+######DESCRIPTIONBEGIN####
+#
+# Author(s):      Chaoban Wang
+# Date:           2008-05-05
+#
+#####DESCRIPTIONEND####
+#
+#====================================================================
+
+cdl_package CYGPKG_DEVS_DAC {
+	parent      CYGPKG_IO_I2C
+	active_if   CYGPKG_IO_I2C
+	display 	"SiS910 DAC Driver"
+	include_dir cyg/io
+	description "The DAC driver Module of sis910 project.
+				It must import generic I2C package."
+	implements  CYGHWR_DAC_DEVICE
+
+	compile -library=libextras.a sis910_i2c_dac.c
+}

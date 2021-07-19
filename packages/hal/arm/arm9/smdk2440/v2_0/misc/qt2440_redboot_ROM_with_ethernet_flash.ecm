@@ -1,0 +1,112 @@
+cdl_savefile_version 1;
+cdl_savefile_command cdl_savefile_version {};
+cdl_savefile_command cdl_savefile_command {};
+cdl_savefile_command cdl_configuration { description hardware template package };
+cdl_savefile_command cdl_package { value_source user_value wizard_value inferred_value };
+cdl_savefile_command cdl_component { value_source user_value wizard_value inferred_value };
+cdl_savefile_command cdl_option { value_source user_value wizard_value inferred_value };
+cdl_savefile_command cdl_interface { value_source user_value wizard_value inferred_value };
+
+cdl_configuration eCos {
+    description "" ;
+    hardware    smdk2440_arm9 ;
+    template    redboot ;
+    package -hardware CYGPKG_HAL_ARM v2_0 ;
+    package -hardware CYGPKG_HAL_ARM_ARM9 v2_0 ;
+    package -hardware CYGPKG_HAL_ARM_ARM9_SMDK2440 v2_0 ;
+    package -hardware CYGPKG_IO_SERIAL_ARM_SMDK2440 v2_0 ;
+    package -hardware CYGPKG_DEVS_FLASH_ARM_SMDK2440 v2_0 ;
+    package -hardware CYGPKG_DEVS_FLASH_AMD_AM29XXXXX v2_0 ;
+    package -template CYGPKG_HAL v2_0 ;
+    package -template CYGPKG_INFRA v2_0 ;
+    package -template CYGPKG_REDBOOT v2_0 ;
+    package -template CYGPKG_ISOINFRA v2_0 ;
+    package -template CYGPKG_LIBC_STRING v2_0 ;
+    package -template CYGPKG_NS_DNS v2_0 ;
+    package -template CYGPKG_CRC v2_0 ;
+    package -hardware CYGPKG_DEVS_ETH_ARM_QT2440 v2_0 ;
+    package -hardware CYGPKG_DEVS_ETH_CL_CS8900A v2_0 ;
+    package CYGPKG_IO_FLASH v2_0 ;
+    package CYGPKG_IO_ETH_DRIVERS v2_0 ;
+};
+
+cdl_component CYGPKG_IO_ETH_DRIVERS_STAND_ALONE {
+    user_value 1
+};
+
+cdl_option CYGSEM_IO_ETH_DRIVERS_WARN {
+    user_value 1
+};
+
+cdl_component CYGPKG_DEVS_ETH_ARM_QT2440_ETH0 {
+    user_value 1
+};
+
+cdl_component CYGSEM_DEVS_ETH_ARM_QT2440_ETH0_SET_ESA {
+    user_value 1
+};
+
+cdl_option CYGNUM_HAL_COMMON_INTERRUPTS_STACK_SIZE {
+    user_value 4096
+};
+
+cdl_option CYGDBG_HAL_COMMON_INTERRUPTS_SAVE_MINIMUM_CONTEXT {
+    user_value 0
+};
+
+cdl_option CYGDBG_HAL_COMMON_CONTEXT_SAVE_MINIMUM {
+    inferred_value 0
+};
+
+cdl_option CYGDBG_HAL_DEBUG_GDB_INCLUDE_STUBS {
+    inferred_value 1
+};
+
+cdl_option CYGSEM_HAL_ROM_MONITOR {
+    user_value 1
+    inferred_value 0
+};
+
+cdl_option CYGSEM_HAL_USE_ROM_MONITOR {
+    inferred_value 0 0
+};
+
+cdl_option CYGBLD_ARM_ENABLE_THUMB_INTERWORK {
+    user_value 1
+};
+
+cdl_option CYGPKG_HAL_ARM_ARM9_ARM920T {
+    user_value 1
+    inferred_value 1
+};
+
+cdl_component CYG_HAL_STARTUP {
+    user_value ROM
+};
+
+cdl_option CYGNUM_HAL_ARM_SMDK2440_CPU_CLOCK {
+    user_value 405000000
+};
+
+cdl_component CYGBLD_BUILD_REDBOOT {
+    user_value 1
+};
+
+cdl_option CYGSEM_REDBOOT_DEFAULT_NO_BOOTP {
+    user_value 1
+};
+
+cdl_component CYGSEM_REDBOOT_FLASH_CONFIG {
+    user_value 0
+};
+
+cdl_option CYGHWR_DEVS_FLASH_AMD_AM29LV160 {
+    user_value 1
+};
+
+cdl_option CYGHWR_DEVS_FLASH_AMD_AM29LV800 {
+    user_value 0
+    inferred_value 1
+};
+
+

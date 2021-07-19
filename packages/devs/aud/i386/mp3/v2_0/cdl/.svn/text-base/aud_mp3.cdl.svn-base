@@ -1,0 +1,53 @@
+# ====================================================================
+#
+#      aud_mp3.cdl
+#
+#      eCos AT91SAM7 CAN module configuration data
+#
+# ====================================================================
+
+# ====================================================================
+######DESCRIPTIONBEGIN####
+#
+# Author(s):      Zhang Sen
+# Contributors:
+# Date:           2008-03-03
+#
+#####DESCRIPTIONEND####
+# ====================================================================
+
+cdl_package CYGPKG_DEVS_AUD_MP3 {
+	display "MP3 Audio Decoder Device Driver"
+
+	description "
+		The MP3 decoder is part of Audio Decoder Device Driver."
+	
+	compile  common.c  tabinit.c  mpglib.c  layer3.c  mp3_dec.c
+
+	cdl_option AUD_DEBUG {
+		display "Audio Decoder Debug Message"
+		flavor  bool
+		default_value 0
+		description "
+			turn on/off audio decoder printf message."
+	}
+
+	cdl_option OUTPUT_WAV {
+		display "output .wav file"
+		flavor bool
+		default_value 0
+	}
+	
+	cdl_option MP3_DEC_COST {
+		display "time cost for decoding one mp3 file"
+		flavor bool
+		default_value 0
+	}
+
+	cdl_option MP3_DEC_OPTIMAL {
+		display "Optimization for mp3 decoder On/Off"
+		flavor bool
+		default_value 0
+	}
+}
+

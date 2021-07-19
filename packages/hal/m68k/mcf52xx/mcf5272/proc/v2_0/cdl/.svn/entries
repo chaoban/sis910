@@ -1,0 +1,40 @@
+8
+
+dir
+560
+http://172.18.204.110/svn/sis910/trunk/sis910/ecos-2.0/packages/hal/m68k/mcf52xx/mcf5272/proc/v2_0/cdl
+http://172.18.204.110/svn/sis910
+
+
+
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6c704c55-9005-d446-bb83-9136561f5d83
+
+hal_m68k_mcf52xx_mcf5272.cdl
+file
+
+
+
+
+2009-03-25T14:16:20.158867Z
+d9f9c852c19076f0daa6d5a377d4c49a
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+

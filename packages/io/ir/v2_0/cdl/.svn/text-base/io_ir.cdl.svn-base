@@ -1,0 +1,37 @@
+# ====================================================================
+#
+#      io_IR.cdl
+#
+#      eCos sis IR IO module configuration data
+#
+# ====================================================================
+
+# ====================================================================
+######DESCRIPTIONBEGIN####
+#
+# Author(s):      
+# Contributors:
+# Date:           2008-03-03
+#
+#####DESCRIPTIONEND####
+# ====================================================================
+
+cdl_package CYGPKG_IO_IR {
+	display "SIS910 IR IO Interface"
+
+	description " "		
+
+	include_dir  cyg/io/ir
+	cdl_interface CYGHWR_IR_DEVICE {
+	display     "Availability of IR hardware"
+    }
+
+	compile	irio.c
+	
+	cdl_option CYGGLO_IO_IR_PROVIDE_DEVTAB_ENTRIES {
+	display         "Provide devtab entries by default"
+	default_value   CYGPKG_IO
+	requires        CYGPKG_IO
+	description "Provide IR IO devtab entries by default"
+    }
+}

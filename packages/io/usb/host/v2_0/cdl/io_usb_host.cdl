@@ -1,0 +1,38 @@
+# ====================================================================
+#
+#      io_usb_host.cdl
+#
+#      eCos Sis910 USB module configuration data
+#
+# ====================================================================
+
+# ====================================================================
+######DESCRIPTIONBEGIN####
+#
+# Author(s):      Tammy Tseng
+# Contributors:
+# Date:           2008-06-30
+#
+#####DESCRIPTIONEND####
+# ====================================================================
+
+cdl_package CYGPKG_IO_USB_HOST {
+	display "SIS910 USB HOST IO Driver"
+    active_if     CYGPKG_IO
+    requires      CYGPKG_ERROR	
+	include_dir "cyg/io"
+	description "The USB IO driver Module of sis910 project"
+
+#	cdl_interface CYGHWR_IO_USB_HOST_EHCI {
+#	display     "Availability of USB EHCI hardware"
+#    }
+	
+	compile -library=libextras.a io_usb_host.c
+
+#	cdl_option CYGGLO_IO_USB_HOST_PROVIDE_DEVTAB_ENTRIES {
+#	display         "Provide devtab entries by default"
+#	default_value   CYGPKG_IO
+#	requires        CYGPKG_IO
+#	description "Provide USB IO devtab entries by default"
+#    }	
+}

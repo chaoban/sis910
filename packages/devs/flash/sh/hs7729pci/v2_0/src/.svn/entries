@@ -1,0 +1,40 @@
+8
+
+dir
+572
+http://172.18.204.110/svn/sis910/trunk/sis910/ecos-2.0/packages/devs/flash/sh/hs7729pci/v2_0/src
+http://172.18.204.110/svn/sis910
+
+
+
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6c704c55-9005-d446-bb83-9136561f5d83
+
+sh_hs7729pci_flash.c
+file
+
+
+
+
+2009-03-25T14:14:58.580220Z
+4966d5c502493b1af9c1b4d3aa1e6432
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+

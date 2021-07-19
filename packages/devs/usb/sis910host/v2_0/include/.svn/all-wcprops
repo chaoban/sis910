@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/sis910/!svn/ver/572/trunk/sis910/ecos-2.0/packages/devs/usb/sis910host/v2_0/include
+END
+usb.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/sis910/!svn/ver/572/trunk/sis910/ecos-2.0/packages/devs/usb/sis910host/v2_0/include/usb.h
+END
+driver.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/sis910/!svn/ver/572/trunk/sis910/ecos-2.0/packages/devs/usb/sis910host/v2_0/include/driver.h
+END
+hcd.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/sis910/!svn/ver/572/trunk/sis910/ecos-2.0/packages/devs/usb/sis910host/v2_0/include/hcd.h
+END
+ohci.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/sis910/!svn/ver/572/trunk/sis910/ecos-2.0/packages/devs/usb/sis910host/v2_0/include/ohci.h
+END
+usberr.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/sis910/!svn/ver/572/trunk/sis910/ecos-2.0/packages/devs/usb/sis910host/v2_0/include/usberr.h
+END
+mass.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/sis910/!svn/ver/568/trunk/sis910/ecos-2.0/packages/devs/usb/sis910host/v2_0/include/mass.h
+END
+ehci.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/sis910/!svn/ver/572/trunk/sis910/ecos-2.0/packages/devs/usb/sis910host/v2_0/include/ehci.h
+END

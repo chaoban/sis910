@@ -1,0 +1,37 @@
+# ====================================================================
+#
+#      IR.cdl
+#
+#      eCos SisIR module configuration data
+#
+# ====================================================================
+
+# ====================================================================
+######DESCRIPTIONBEGIN####
+#
+# Author(s):      wang wei
+# Contributors:
+# Date:           2008-04-23
+#
+#####DESCRIPTIONEND####
+# ====================================================================
+
+cdl_package CYGPKG_DEVS_IR {
+	display "SIS910 IR Driver"
+	include_dir cyg/io
+	parent      CYGPKG_IO_IR
+	active_if   CYGPKG_IO_IR
+	description "The IR driver Module of sis910 project"
+	implements  CYGHWR_IR_DEVICE
+	
+	
+	compile -library=libextras.a ir.c
+	
+	cdl_option CYGVAR_DEVS_IR_sis910_devtab_entry {
+	display       "Provide a devtab entry for IR"
+	default_value CYGGLO_IO_IR_PROVIDE_DEVTAB_ENTRIES
+	requires      CYGPKG_IO
+	description  "Provide IR IO devtab entries by default"
+    }
+}
+

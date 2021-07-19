@@ -1,0 +1,52 @@
+8
+
+dir
+572
+http://172.18.204.110/svn/sis910/trunk/sis910/ecos-2.0/packages/devs/serial/powerpc/quicc2/v2_0/src
+http://172.18.204.110/svn/sis910
+
+
+
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6c704c55-9005-d446-bb83-9136561f5d83
+
+quicc2_scc_serial.h
+file
+
+
+
+
+2009-03-25T14:13:53.970431Z
+63c30104a9d4a4a809531ce43c9b4625
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+
+quicc2_scc_serial.c
+file
+
+
+
+
+2009-03-25T14:13:53.986056Z
+2e8823973f5fe40e7123ce8e41eee741
+2008-02-29T23:34:13.671875Z
+3
+sis3185
+
